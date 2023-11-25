@@ -14,7 +14,7 @@ import { Result } from "true-myth";
 const Home: NextPage = () => {
     const session = useRef<InferenceSession | null>(null);
     const [batch, setBatch] = useState<string[]>([]);
-    const [embeddings, setEmbeddings] = useState<Float32Array>();
+    const [embeddings, setEmbeddings] = useState<Float32Array | null>(null);
 
     const loadModel = async () => {
         if (session.current) {
@@ -50,9 +50,7 @@ const Home: NextPage = () => {
         const [state, data] = embeddingsResult.repr;
         if (state === "Err") {
             return Result.err(
-                new Error(
-                    "Session run failed: " + data.toString()
-                )
+                new Error("Session run failed: " + data.toString())
             );
         }
         const embeddings = data;
@@ -61,14 +59,21 @@ const Home: NextPage = () => {
 
     return (
         <Layout title={"EMBD"}>
-            <div className="flex flex-col">
+            <div className="flex flex-col items-center w-full h-full mx-auto gap-y-8">
                 <h1> Welcome to EMBD </h1>
                 <button onClick={loadModel}>Load Model</button>
                 <textarea
+                    className="w-1/2 h-1/2 border-2 border-black"
                     onChange={(e) => setBatch(e.target.value.split("\n"))}
                 />
                 <button onClick={runSession}>Run Session</button>
-                <p>{embeddings?.toString()}</p>
+                <p className="w-96 h-full break-all">
+                    {embeddings
+                        ?.subarray(0, 64)
+                        .toString()
+                        .split(",")
+                        .join("\n")}
+                </p>
             </div>
             <WebGPUModal />
         </Layout>
