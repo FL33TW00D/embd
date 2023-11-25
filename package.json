@@ -1,10 +1,17 @@
 {
     "name": "embd",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "author": "Christopher Fleetwood <chris@fleetwood.dev>",
     "description": "Cross-platform, GPU accelerated embeddings",
     "repository": "FL33TW00D/embd",
-    "keywords": ["RAG", "embeddings", "WebGPU", "ML", "Machine Learning", "AI"],
+    "keywords": [
+        "RAG",
+        "embeddings",
+        "WebGPU",
+        "ML",
+        "Machine Learning",
+        "AI"
+    ],
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "devDependencies": {
@@ -28,5 +35,7 @@
         "uuid": "^9.0.1",
         "embd-webgpu": "0.1.0"
     },
-    "files": ["dist/**/*"]
+    "files": [
+        "dist/**/*"
+    ]
 }
