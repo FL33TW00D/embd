@@ -12,8 +12,8 @@ dependencies:
     specifier: ^5.62.0
     version: 5.62.0(@typescript-eslint/parser@5.62.0)(eslint@8.28.0)(typescript@4.9.3)
   embd:
-    specifier: ^0.2.0
-    version: 0.2.0
+    specifier: ^0.3.0
+    version: 0.3.0
   next:
     specifier: 13.1.0
     version: 13.1.0(react-dom@18.2.0)(react@18.2.0)
@@ -899,8 +899,8 @@ packages:
     resolution: {integrity: sha512-qMTOeopRyZ2dB8bpiTPOMOGJJ4KlJeDHBXKzOBwCa3jws9F4W9MtgtLMxdaZlTBCM0DI1aBbU2thx5RQSqOiaA==}
     dev: false
 
-  /embd@0.2.0:
-    resolution: {integrity: sha512-Pq0D8K2v8ff+ARr4pgh89nYowv7i0kr4N8/vJACc44MtErf0KQlWQkJm406tHonBYyzDsVVW6GcBsL4j0eYoFg==}
+  /embd@0.3.0:
+    resolution: {integrity: sha512-Y8ebwu+vvfvxqVax69u4fqR2bzDwJB69+eNeG68mpsvQKtBUIoiykzrM5Zit4hoUSIDHLKEaMmVjID8jebIDZQ==}
     dependencies:
       comlink: 4.3.1
       embd-webgpu: 0.1.0
