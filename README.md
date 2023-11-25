@@ -1,5 +1,5 @@
 <div align="center">
-<img width="550px" height="200px" src="https://github.com/FL33TW00D/embd/raw/master/.github/embd.png">
+<img width="550px" height="250px" src="https://github.com/FL33TW00D/embd/raw/master/.github/embd.png">
 <p><a href="https://ratchet.sh/embd">Documentation</a> | <a href="https://github.com/users/FL33TW00D/projects/1">Roadmap</a></p>
 </div>
 
