@@ -12,8 +12,8 @@ dependencies:
     specifier: ^5.62.0
     version: 5.62.0(@typescript-eslint/parser@5.62.0)(eslint@8.28.0)(typescript@4.9.3)
   embd:
-    specifier: file:..
-    version: file:..
+    specifier: ^0.2.0
+    version: 0.2.0
   next:
     specifier: 13.1.0
     version: 13.1.0(react-dom@18.2.0)(react@18.2.0)
@@ -894,6 +894,21 @@ packages:
   /electron-to-chromium@1.4.594:
     resolution: {integrity: sha512-xT1HVAu5xFn7bDfkjGQi9dNpMqGchUkebwf1GL7cZN32NSwwlHRPMSDJ1KN6HkS0bWUtndbSQZqvpQftKG2uFQ==}
     dev: true
+
+  /embd-webgpu@0.1.0:
+    resolution: {integrity: sha512-qMTOeopRyZ2dB8bpiTPOMOGJJ4KlJeDHBXKzOBwCa3jws9F4W9MtgtLMxdaZlTBCM0DI1aBbU2thx5RQSqOiaA==}
+    dev: false
+
+  /embd@0.2.0:
+    resolution: {integrity: sha512-Pq0D8K2v8ff+ARr4pgh89nYowv7i0kr4N8/vJACc44MtErf0KQlWQkJm406tHonBYyzDsVVW6GcBsL4j0eYoFg==}
+    dependencies:
+      comlink: 4.3.1
+      embd-webgpu: 0.1.0
+      idb: 7.1.1
+      p-retry: 5.1.2
+      true-myth: 6.2.0
+      uuid: 9.0.1
+    dev: false
 
   /emoji-regex@9.2.2:
     resolution: {integrity: sha512-L18DaJsXSUk2+42pv8mLs5jJT2hqFkFE4j21wOmgbUqsZ2hL72NsUU785g9RXgo3s0ZNgVl42TiHp3ZtOv/Vyg==}
@@ -2793,20 +2808,3 @@ packages:
   /yocto-queue@0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
-
-  file:..:
-    resolution: {directory: .., type: directory}
-    name: embd
-    dependencies:
-      comlink: 4.3.1
-      embd-webgpu: file:../../whisper-web/target/pkg/embd-wasm
-      idb: 7.1.1
-      p-retry: 5.1.2
-      true-myth: 6.2.0
-      uuid: 9.0.1
-    dev: false
-
-  file:../../whisper-web/target/pkg/embd-wasm:
-    resolution: {directory: ../../whisper-web/target/pkg/embd-wasm, type: directory}
-    name: embd-webgpu
-    dev: false
