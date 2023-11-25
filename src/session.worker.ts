@@ -62,7 +62,7 @@ export class Session {
     }
 
     public async run(
-        audio: Uint8Array,
+        batch: string[],
         options: any 
     ): Promise<Result<any, Error>> {
         if (!this.embdSession) {
@@ -73,7 +73,7 @@ export class Session {
             );
         }
 
-        return Result.ok(await this.embdSession.run(audio, options));
+        return Result.ok(await this.embdSession.run(batch, options));
     }
 }
 

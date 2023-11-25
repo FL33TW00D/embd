@@ -160,7 +160,7 @@ export default class ModelDB {
         model: AvailableModels,
         onProgress: (progress: number) => void
     ): Promise<Result<void, Error>> {
-        const remoteURL = `${this.remoteUrl}/embd/${model}-q8g16.bin`;
+        const remoteURL = `${this.remoteUrl}/embd/${model}-f32.bin`;
         const fetchResult = await this.fetchBytes(remoteURL, onProgress);
 
         if (fetchResult.isErr) {

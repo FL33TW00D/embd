@@ -3,7 +3,7 @@ import ModelDB from "./db/modelDB";
 import { DBModel } from "./db/types";
 
 export enum AvailableModels {
-    BAAI_SMALL_EN_v1_5 = "BAII/small-en-v1.5",
+    BAAI_SMALL_EN_v1_5 = "bge-small-en-v1.5",
 }
 
 export const ModelSizes: Map<AvailableModels, number> = new Map([

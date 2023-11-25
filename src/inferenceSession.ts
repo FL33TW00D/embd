@@ -20,6 +20,16 @@ export class InferenceSession {
         return await this.session!.initSession(selectedModel, onProgress);
     }
 
+    async run(
+        batch: string[],
+        options: any
+    ): Promise<Result<any | void, Error>> {
+        if (this.session == null) {
+            return Result.err(new Error("Session not initialized"));
+        }
+        return await this.session!.run(batch, options);
+    }
+
     public destroy(): void {
         if (this.innerWorker !== null) {
             console.warn("Terminating worker");
@@ -28,4 +38,3 @@ export class InferenceSession {
         this.session = null;
     }
 }
-
