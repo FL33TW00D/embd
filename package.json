@@ -26,7 +26,7 @@
         "p-retry": "^5.1.2",
         "true-myth": "^6.2.0",
         "uuid": "^9.0.1",
-        "embd-webgpu": "file:../whisper-web/target/pkg/embd-wasm"
+        "embd-webgpu": "0.1.0"
     },
     "files": ["dist/**/*"]
 }

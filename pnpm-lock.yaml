@@ -9,8 +9,8 @@ dependencies:
     specifier: 4.3.1
     version: 4.3.1
   embd-webgpu:
-    specifier: file:../whisper-web/target/pkg/embd-wasm
-    version: file:../whisper-web/target/pkg/embd-wasm
+    specifier: 0.1.0
+    version: 0.1.0
   idb:
     specifier: ^7.1.1
     version: 7.1.1
@@ -416,6 +416,10 @@ packages:
     dependencies:
       esutils: 2.0.3
     dev: true
+
+  /embd-webgpu@0.1.0:
+    resolution: {integrity: sha512-qMTOeopRyZ2dB8bpiTPOMOGJJ4KlJeDHBXKzOBwCa3jws9F4W9MtgtLMxdaZlTBCM0DI1aBbU2thx5RQSqOiaA==}
+    dev: false
 
   /escape-string-regexp@4.0.0:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
@@ -1005,8 +1009,3 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
     dev: true
-
-  file:../whisper-web/target/pkg/embd-wasm:
-    resolution: {directory: ../whisper-web/target/pkg/embd-wasm, type: directory}
-    name: embd-webgpu
-    dev: false
