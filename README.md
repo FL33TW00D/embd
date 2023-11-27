@@ -13,6 +13,9 @@ Check out [Getting Started](https://ratchet.sh/embd) for more.
 
 How fast?
 
+## Benchmarks 
+
+This is in **alpha** - breaking changes are guaranteed.
 
 ## Supported Platforms
 
