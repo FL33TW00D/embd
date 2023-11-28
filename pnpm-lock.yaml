@@ -9,8 +9,8 @@ dependencies:
     specifier: 4.3.1
     version: 4.3.1
   embd-webgpu:
-    specifier: 0.1.0
-    version: 0.1.0
+    specifier: 0.2.0
+    version: 0.2.0
   idb:
     specifier: ^7.1.1
     version: 7.1.1
@@ -417,8 +417,8 @@ packages:
       esutils: 2.0.3
     dev: true
 
-  /embd-webgpu@0.1.0:
-    resolution: {integrity: sha512-qMTOeopRyZ2dB8bpiTPOMOGJJ4KlJeDHBXKzOBwCa3jws9F4W9MtgtLMxdaZlTBCM0DI1aBbU2thx5RQSqOiaA==}
+  /embd-webgpu@0.2.0:
+    resolution: {integrity: sha512-q4NgNn9Sgmo+XHK5N1z1UFkgEErRQqs4pio3gr5o1raNTwQnbnIaIuUzTgusodVBHXgjfRX4L5hY01+h//rcwg==}
     dev: false
 
   /escape-string-regexp@4.0.0:
