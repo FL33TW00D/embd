@@ -7,6 +7,8 @@
 
 EMBD is a fast, **cross-platform** GPU accelerated library for computing embeddings from text, designed to run entirely client-side in your browser/electron app.
 
+Perfect for vector search, RAG etc.
+
 Check out [Getting Started](https://ratchet.sh/embd) for more.
 
 ## Benchmarks 
