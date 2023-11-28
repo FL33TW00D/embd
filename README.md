@@ -11,7 +11,7 @@ Check out [Getting Started](https://ratchet.sh/embd) for more.
 
 ## Benchmarks 
 
-How fast?
+<img width="1124" alt="bench" src="https://github.com/FL33TW00D/embd/assets/45471420/10cedc0e-3eb2-4a78-b1fc-47ae0cebcac9">
 
 ## Warning ⚠️ 
 
