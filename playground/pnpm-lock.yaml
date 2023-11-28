@@ -12,8 +12,8 @@ dependencies:
     specifier: ^5.62.0
     version: 5.62.0(@typescript-eslint/parser@5.62.0)(eslint@8.28.0)(typescript@4.9.3)
   embd:
-    specifier: ^0.3.0
-    version: 0.3.0
+    specifier: ^0.4.0
+    version: 0.4.0
   next:
     specifier: 13.1.0
     version: 13.1.0(react-dom@18.2.0)(react@18.2.0)
@@ -895,15 +895,15 @@ packages:
     resolution: {integrity: sha512-xT1HVAu5xFn7bDfkjGQi9dNpMqGchUkebwf1GL7cZN32NSwwlHRPMSDJ1KN6HkS0bWUtndbSQZqvpQftKG2uFQ==}
     dev: true
 
-  /embd-webgpu@0.1.0:
-    resolution: {integrity: sha512-qMTOeopRyZ2dB8bpiTPOMOGJJ4KlJeDHBXKzOBwCa3jws9F4W9MtgtLMxdaZlTBCM0DI1aBbU2thx5RQSqOiaA==}
+  /embd-webgpu@0.2.0:
+    resolution: {integrity: sha512-q4NgNn9Sgmo+XHK5N1z1UFkgEErRQqs4pio3gr5o1raNTwQnbnIaIuUzTgusodVBHXgjfRX4L5hY01+h//rcwg==}
     dev: false
 
-  /embd@0.3.0:
-    resolution: {integrity: sha512-Y8ebwu+vvfvxqVax69u4fqR2bzDwJB69+eNeG68mpsvQKtBUIoiykzrM5Zit4hoUSIDHLKEaMmVjID8jebIDZQ==}
+  /embd@0.4.0:
+    resolution: {integrity: sha512-mtrkv5DPBVXaNkpUEEHRah8Uk93tVKTO5t2rYrjV17dajT3QUZIocTpGtRRWwgvEv0J0UoKfuOYE4cCWNZZv4A==}
     dependencies:
       comlink: 4.3.1
-      embd-webgpu: 0.1.0
+      embd-webgpu: 0.2.0
       idb: 7.1.1
       p-retry: 5.1.2
       true-myth: 6.2.0
