@@ -27,7 +27,7 @@ export class InferenceSession {
         if (this.session == null) {
             return Result.err(new Error("Session not initialized"));
         }
-        return await this.session!.run(batch, options);
+        return await this.session.run(batch, options);
     }
 
     public destroy(): void {

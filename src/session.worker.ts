@@ -63,8 +63,8 @@ export class Session {
 
     public async run(
         batch: string[],
-        options: any 
-    ): Promise<Result<any, Error>> {
+        options: any
+    ): Promise<Result<Float32Array, Error>> {
         if (!this.embdSession) {
             return Result.err(
                 new Error(
@@ -80,4 +80,3 @@ export class Session {
 if (typeof self !== "undefined") {
     Comlink.expose(Session);
 }
-
