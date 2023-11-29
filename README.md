@@ -11,6 +11,14 @@ Perfect for vector search, RAG etc.
 
 Check out [Getting Started](https://ratchet.sh/embd) for more.
 
+## Supported Models
+
+| Model | Size (MB) |
+| ------------- | ------------- |
+| [bge-small-en-v1.5](https://huggingface.co/BAAI/bge-small-en-v1.5)  | 30 (WIP) |
+
+Don't see the model you want? Send us an email!
+
 ## Benchmarks 
 
 <img width="1124" alt="bench" src="https://github.com/FL33TW00D/embd/assets/45471420/10cedc0e-3eb2-4a78-b1fc-47ae0cebcac9">
