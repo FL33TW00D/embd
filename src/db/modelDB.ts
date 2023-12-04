@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from "uuid";
 import { DBModel, DBTokenizer } from "./types";
 import { AvailableModels } from "../models";
 import { Result } from "true-myth";
-import pRetry from "p-retry";
+import { retry } from "../utils/retry";
 
 interface ModelDBSchema extends DBSchema {
     models: {
@@ -88,7 +88,7 @@ export default class ModelDB {
             }
             return Result.ok<Uint8Array, Error>(chunks);
         };
-        return await pRetry(run, { retries: 3 });
+        return await retry(run, { retries: 3 });
     }
 
     async _getModel(modelID: string): Promise<Result<DBModel, Error>> {
