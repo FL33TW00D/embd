@@ -9,8 +9,8 @@ dependencies:
     specifier: 4.3.1
     version: 4.3.1
   embd-webgpu:
-    specifier: 0.2.0
-    version: 0.2.0
+    specifier: 0.3.0
+    version: 0.3.0
   idb:
     specifier: ^7.1.1
     version: 7.1.1
@@ -29,16 +29,16 @@ devDependencies:
     specifier: ^14.18.63
     version: 14.18.63
   '@types/uuid':
-    specifier: ^9.0.6
+    specifier: ^9.0.7
     version: 9.0.7
   '@typescript-eslint/eslint-plugin':
-    specifier: ^6.9.1
+    specifier: ^6.12.0
     version: 6.12.0(@typescript-eslint/parser@6.12.0)(eslint@8.54.0)(typescript@4.7.4)
   '@typescript-eslint/parser':
-    specifier: ^6.9.1
+    specifier: ^6.12.0
     version: 6.12.0(eslint@8.54.0)(typescript@4.7.4)
   eslint:
-    specifier: ^8.52.0
+    specifier: ^8.54.0
     version: 8.54.0
   typescript:
     specifier: ~4.7.4
@@ -417,8 +417,8 @@ packages:
       esutils: 2.0.3
     dev: true
 
-  /embd-webgpu@0.2.0:
-    resolution: {integrity: sha512-q4NgNn9Sgmo+XHK5N1z1UFkgEErRQqs4pio3gr5o1raNTwQnbnIaIuUzTgusodVBHXgjfRX4L5hY01+h//rcwg==}
+  /embd-webgpu@0.3.0:
+    resolution: {integrity: sha512-HblIe8xnOTsJWiIIsg8YDsa4JKGptT9moW3NzQ2mXcaVVV0/PYWjUFtQfW4SmWpDi7QRo6Cj2O/XKu3OVp6P+Q==}
     dev: false
 
   /escape-string-regexp@4.0.0:
